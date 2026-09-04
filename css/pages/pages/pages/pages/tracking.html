@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Delivery - Muramba Enterprise Solutions</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Muramba Transport
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book a Service</a></li>
+                <li><a href="tracking.html">Track Delivery</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Delivery Tracking -->
+    <main>
+
+        <section class="about-section">
+
+            <h1>Track Your Delivery</h1>
+
+            <p>
+                Enter your Delivery ID below to check the current
+                status of your delivery.
+            </p>
+
+            <br>
+
+            <form id="trackingForm">
+
+                <label for="deliveryId">
+                    Delivery ID
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="deliveryId"
+                    name="deliveryId"
+                    placeholder="Example: DEL001"
+                    required
+                >
+
+                <br><br>
+
+                <button type="submit" class="btn">
+                    Track Delivery
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Delivery Status -->
+        <section class="about-section">
+
+            <h2>Delivery Status</h2>
+
+            <div class="service-card">
+
+                <h3 id="statusTitle">
+                    Delivery Information
+                </h3>
+
+                <p>
+                    Delivery ID:
+                    <strong id="displayDeliveryId">---</strong>
+                </p>
+
+                <p>
+                    Driver:
+                    <strong id="driverName">---</strong>
+                </p>
+
+                <p>
+                    Current Status:
+                    <strong id="deliveryStatus">---</strong>
+                </p>
+
+                <p>
+                    Estimated Delivery:
+                    <strong id="estimatedDelivery">---</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Muramba Enterprise Solutions.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
